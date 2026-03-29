@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Shima Nazari PhD",
+        "pronouns": "she/her",
+        "position": "Assistant Professor",
+        "linkedin": "https://mae.ucdavis.edu/directory/shima-nazari",
+        "image": "headshots/nazari.jpg"
+    },
+    {
+        "name": "Abhigyan Majumdar",
+        "pronouns": "he/him",
+        "position": "PhD Student",
+        "linkedin": "https://www.linkedin.com/in/abhigyanmajumdar/",
+        "image": "headshots/abhi.jpg"
+    }
+]

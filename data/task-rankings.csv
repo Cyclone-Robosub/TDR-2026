@@ -1,0 +1,19 @@
+Name,# of Teams,Point Value
+Gate: Maintain Fixed Heading,24,150
+Gate: Pass Through,24,100
+Gate: Style,18,800
+"Start Dialing: any, Correct side",13,600
+Gate: Flip Coin,13,300
+Chevrons: Surface in area,6,1000
+Goa'uld (Torpedo): Any,4,500
+Location: Any bin/Correct bin,3,1000
+Time Bonus,2,100
+Inter-Vehicle Com,2,1000
+Random Pinger: Task 2,2,1500
+Random Pinger: Task1,2,500
+Goa'uld (Torpedo): Correct,2,500
+Location: Remove Lid,1,500
+Chevrons: Surface w/object,0,400
+Chevrons: Drop Object,0,200
+Chevrons: Object on table,0,500
+Chevrons: Correct Sequence,0,300

@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Peter Webster",
+        "pronouns": "he/him",
+        "position": "Co-Founder & Co-President",
+        "linkedin": "https://www.linkedin.com/in/peter-webster-81n/",
+        "image": "headshots/peter.jpg"
+    },
+    {
+        "name": "Jason Daniel Pieck",
+        "pronouns": "any pronouns",
+        "position": "Co-Founder & Co-President",
+        "linkedin": "https://www.linkedin.com/in/jdpieck/",
+        "image": "headshots/jason.jpg"
+    },
+    {
+        "name": "Anjani Gadkari",
+        "pronouns": "she/her",
+        "position": "Electrical",
+        "linkedin": "https://www.linkedin.com/in/anjani-gadkari-2532311ba/",
+        "image": "headshots/anjani.jpg"
+    },
+    {
+        "name": "Nidhi Vadulas",
+        "pronouns": "she/her",
+        "position": "Electrical",
+        "linkedin": "https://www.linkedin.com/in/nidhi-vadulas/",
+        "image": "headshots/nidhi.jpg"
+    },
+    {
+        "name": "Dilraj Gill",
+        "pronouns": "he/him",
+        "position": "Electrical",
+        "linkedin": "https://www.linkedin.com/in/dilraj-gill/",
+        "image": "headshots/dilraj.jpg"
+    },
+    {
+        "name": "Luna Park",
+        "pronouns": "they/them",
+        "position": "Software",
+        "linkedin": "https://www.linkedin.com/in/luna-park-a03b802b5/",
+        "image": "headshots/luna.jpg"
+    },  
+    {
+        "name": "Jacob Marinas",
+        "pronouns": "he/him",
+        "position": "Software",
+        "linkedin": "https://www.linkedin.com/in/jimari/",
+        "image": "headshots/jacob.jpeg"
+    },
+    {
+        "name": "Nico Holasek",
+        "pronouns": "he/him",
+        "position": "Mechanical",
+        "linkedin": "https://www.linkedin.com/in/nicolas-holasek/",
+        "image": "headshots/nico.jpeg"
+    },
+    {
+        "name": "Allen Cooke",
+        "pronouns": "he/him",
+        "position": "Mechanical",
+        "linkedin": "",
+        "image": "headshots/allen.jpg"
+    },
+    {
+        "name": "Mohammad Ayub Hanif Saleh",
+        "pronouns": "he/him",
+        "position": "Navigation",
+        "linkedin": "https://www.linkedin.com/in/mohammadayubhanifsaleh/",
+        "image": "headshots/mohammad.jpeg"
+    },
+    {
+        "name": "Zenyn Ethridge",
+        "pronouns": "he/him",
+        "position": "Propulsion",
+        "linkedin": "https://www.linkedin.com/in/zenyn-ethridge-530690156/",
+        "image": "headshots/zenyn.jpeg"
+    },
+    {
+        "name": "Luci Masselink",
+        "pronouns": "they/them",
+        "position": "Hull",
+        "linkedin": "https://www.linkedin.com/in/luci-masselink-366680282/",
+        "image": "headshots/luci.jpg"
+    },
+    {
+        "name": "David Kou",
+        "pronouns": "he/him",
+        "position": "Manipulation",
+        "linkedin": "https://www.linkedin.com/in/david-kou-3290b0193/",
+        "image": "headshots/david.jpg"
+    },
+    {
+        "name": "Aditi Anand",
+        "pronouns": "she/her",
+        "position": "Research",
+        "linkedin": "https://www.linkedin.com/in/anandaditi",
+        "image": "headshots/aditi.jpg"
+    },
+    {
+        "name": "Aubri Lee",
+        "pronouns": "she/her",
+        "position": "Public Relations",
+        "linkedin": "",
+        "image": "headshots/aubri.png"
+    }
+]
