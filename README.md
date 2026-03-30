@@ -1,8 +1,8 @@
-# 2025-Design-Showcase-Poster
-A robot description and high-level overview
+# TDR-2026
+Technical Design Report for the 2026 RoboSub Competition
 
-
-It is intended to serve as an example of our development practices and technology stack.
+## Report Rubric and Requirements
+https://robonation.gitbook.io/robosub-resources/section-2-design-documentation/2.1-technical-design-report
 
 ## How to Run Locally
 Install Typst
@@ -21,6 +21,7 @@ To exit, use `Ctrl+C`.
 
 ## License
 This code is released under the **BSD 3-Clause License**. See [`LICENSE.md`](LICENSE.md) for details.
+
 ## Branding and Usage
 While the underlying code is openly licensed, the "Cyclone RoboSub" name, associated logos, distinctive design elements, and overall visual branding are the intellectual property of Cyclone RoboSub @ UC Davis.
 

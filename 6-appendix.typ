@@ -24,9 +24,6 @@
 //   }
 // })
 
-= Appendix
-
-
 //== Bill of Materials
 //insert table version of BOM time permitting
 

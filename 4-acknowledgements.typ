@@ -1,4 +1,3 @@
-= Acknowledgements
 We would like to extent a huge thank you to our sponsors, including Citris and the Banatao Institute, Nortek,   InfoSec Decoded, and RIX Industries. In addition, we would like to thank our parents,  and the Engineering Student Design Center for the tools and workspace.
 
 In addition, we would like to thank our advisors Dr. Shima Nazari and Abhigyan Majumdar for their continued support and insight during the past year.

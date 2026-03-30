@@ -1,38 +1,5 @@
-#import "template.typ": *
-#import "oasis-align.typ": *
+#import "@preview/oasis-align:0.3.3": *
 
-#show: ieee.with(
-  title: [2025 Technical Design Report],
-  abstract: include "abstract.typ",
-  authors: csv("data/2025 TDR Leadership and Advisor Data.csv", row-type: dictionary),
-  // index-terms: ("Scientific writing", "Typesetting", "Document creation", "Syntax"),
-  bibliography: bibliography("refs.bib"),
-)
-
-= Competition Strategy
-
-== 2023-2024 Competition Year
-Our first conversations regarding competition strategy began with the team’s founding in 2023. As a new team, we understood the importance of setting achievable goals, so we set out to cultivate a solid understanding of the competition challenges to inform our team’s expected abilities.
-
-Our first team meeting involved breaking down the 2023 Team Handbook @handbook and assessing strategy. We cataloged the maximum available points associated with each task, along with the number of teams able to successfully attempt each task as seen in @taskbreakdown. We measured success rate as a team's ability to achieve the maximum points possible within a given task. Furthermore, we gave extra weight to tasks that succinctly demonstrated intended vehicle functionality. Doing so allowed us to identify trends and pinpoint tasks that yielded the most points while falling within most teams’ predicted abilities. 
-
-During our analysis, we noted that the majority of teams’ points were earned by completing navigation-based tasks such as surfacing in the _Octagon_ and passing through the _Gate_. When compared with precise manipulation tasks, we found that successful attempts were less common. Based on this research, we prioritized navigation-based tasks while de-prioritizing manipulation-based.
-
-Originally, Cyclone RoboSub planned on competing in the 2024 RoboSub Competition. However, after lengthy deliberation, we chose to postpone competing until 2025 with the intent to use the extra time to build a solid foundation for our vehicle and team. Despite this, we sent representatives to the 2024 RoboSub competition to ask questions and witness different strategies firsthand. During their time at the venue, our representatives spoke with other teams and took detailed notes on the pitfalls and effective strategies teams encountered. Most teams advised against relying on vision systems as a primary means of navigation and instead recommended the use of a Doppler Velocity Log (DVL). Testing early and often was a common theme along with the use of fail-safes spread across all systems.
-
-This new intel, combined with our previous year’s assessment, culminated in our current competition strategy for the 2025 RoboSub Competition.
-
-== 2025 Competition Strategy
-For the 2025 RoboSub Competition, we chose to prioritize the _Gate_, _Octagon_, and _Bin_ tasks with a plan to add functionality for the _Return Home_ and _Coinflip_ tasks with time permitting. Manatee was designed to be small and maneuverable, allowing it to accumulate style points by rolling as it passed through the gate. The vehicle primarily relies on its DVL from Nortek @dvl, and Inertial Measurement Unit (IMU) from InertialSense @imu, to navigate the pool. 
-
-To facilitate less complex vision-based tasks, Manatee is equipped with two cameras, one forward-facing and one downward-facing. The forward-facing camera recognizes which side of the _Gate_ the vehicle passes through at the start of the run to inform our dropper location at the _Bin_ task. The downward-facing camera allows Manatee to accurately position itself above the correct side of the _Bin_ before releasing both droppers in succession.
-
-Beyond the dropper, our design focus centered around keeping the vehicle small and nimble enabling it to efficiently complete navigation-based tasks such as the _Gate_ and _Octagon_. This research regarding competition strategy formed the basis of our design strategy.
-//So, moving forward, we would design an AUV that is nimble and consistent, focusing on navigational tasks. Our research regarding competition strategy formed the core of our design strategy -- it continually informed the decisions we made and philosophies we stood by. Based on the goals we determined achievable, we designed our robot to emphasize successfully completing those tasks. 
-
-// To complement extensive competition research, the most significant competition preparation is the fast-paced hardware testing schedule our team applied bi-weekly. Despite our consistent testing, the principal challenge that we expect to face at the competition is adapting our controller’s navigation strategy to the competition layout. The need for in situational modification and serviceability drove the majority of our design decisions detailed in the following section.
-
-= Design Strategy
 == Guiding Design Philosophies
 At the core of our organization is a cycle of research, learning, doing, and teaching. This philosophy informs our system's design. Our mechanical and electrical systems are built with modularity, simplicity, and rugged functionality in mind. As a first-year team, time, budget, and experience constraints require us to focus on making a few key systems work well, meaning we combine careful theoretical research with consistent, hands-on testing. High fidelity CAD models made using Onshape @onshape were used to plan the 3D layout and inform assembly procedures. We use 3D printing for rapid iteration, favor off-the-shelf components when possible to avoid unnecessary development costs, and design with practicality and durability in mind.
 
@@ -154,30 +121,3 @@ In future competition years we hope to improve our vision model to aid in naviga
 The design strategy of the Cyclone RoboSub team is a research and testing driven approach to create a system that is simple, reliable, and adaptable. Lessons learned from attending previous competitions are distilled into Manatee’s requirements that optimize for competition score under the constraints of team resources and time.
 
 Intrinsic to this goal is the construction of a strong foundation to build upon in subsequent competition years – a foundation not only of hardware and software but also of community. We build friendships, skills, and a love for science and engineering that we hope our team members will carry with them throughout their journey. Our competition vehicle is designed to evolve alongside the team. 
-
-= Testing Strategy
-== Component Level Testing
-Each component of our electrical system was tested before being implemented. After each new addition, we performed a full test of all systems to determine if any new issues had been introduced. This included methodically and redundantly checking all electrical connections and data feeds under stressful conditions. 
-
-== System Level Testing
-Our team employs a test-early and often strategy by performing bi-weekly pool-tests with minimal delays. Consistent weekly goals guided the team to prioritize the next viable product of the work, checking regularly that individual members’ and subteams’ work was compatible with the larger design. Routine pool testing often identified issues at the interface between subsystems that were difficult to identify in subsystem level testing.  In addition to testing the robot, preparation for the system tests also revealed the need to design well-documented standard operating procedures (SOPs). These SOPs cover a range of critical topics including software configuration, battery and electrical safety and continuity, hull leak testing, and data logging.
-== Standard Operating Procedure
-Our SOPs started small with a few important steps to take before in-pool testing, as we gained experience, we expanded this list into a decision-based case tree, allowing us to quickly respond when something goes wrong as seen in @pooltestprocedure. 
-
-One example of where this problem-solving structure was used was troubleshooting inconsistent thruster behavior ultimately tracing it back to a hidden solder bridge and misconfigured software. This structured, methodical approach saved time and minimized guesswork.
-
-Beyond the procedure documents themselves, the real strength of our testing lies in the way our team executes it: with clear communication, calm problem-solving, and shared knowledge. These habits – built through repetition and reflection – are what allow Manatee to operate safely and effectively in uncertain conditions. 
-
-#figure(
-  image("images/blue-pool-robot.JPG"),
-  caption: [AUV "Manatee" Before a Pool Test]
-)
-
-#include "acknowledgements.typ"
-
-#set page(
-  columns: 1,
-  margin: 1in,
-)
-
-#include "appendix.typ"

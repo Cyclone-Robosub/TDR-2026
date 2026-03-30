@@ -1,9 +1,3 @@
-//TODO
-/*
-- TDR_School/OrgName_RS2025
-- add name to every page
-
-*/
 // This function gets your whole document as its `body` and formats
 // it as an article in the style of the IEEE.
 #let ieee(
@@ -92,7 +86,7 @@
   )
   page(
     paper: "us-letter",
-    background: image("branding/cover-page.svg"),
+    background: image("../branding/cover-page.svg"),
     []
   )
 
@@ -154,7 +148,7 @@
     if it.level == 1 {
       // First-level headings are centered smallcaps.
       // We don't want to number the acknowledgment section.
-      let is-ack = it.body in ([Acknowledgment], [Acknowledgement], [Acknowledgments], [Acknowledgements])
+      let is-ack = it.body in ([Acknowledgment], [Acknowledgement], [Acknowledgments], [Acknowledgements], [Appendix])
       set align(center)
       set text(if is-ack { 10pt } else { 11pt })
       show: block.with(above: 15pt, below: 13.75pt, sticky: true)
@@ -207,8 +201,8 @@
 
       set text(.9em)
       set align(center)
-      let leaders = json("data/leaders.json")
-      let advisors = json("data/advisors.json")
+      let leaders = json("../data/leaders.json")
+      let advisors = json("../data/advisors.json")
       
       [*Leadership: *]
       for leader in leaders {
@@ -280,7 +274,21 @@
 
   // Display the paper's contents.
   body
+}
 
-  // Display bibliography.
-  bibliography
+
+#let appendix(body) = {
+  set heading(numbering: "A.A.", supplement: [Appendix])
+  show heading.where(level: 2): set heading(supplement: "Appendix")
+  show heading.where(level: 2): set heading(numbering: (..n) => numbering("A", n.pos().last()))
+  // show heading.where(level: 3): set heading(outlined: false)
+  // show heading.where(level: 2): it => {
+  //   pagebreak()
+  //   [Appendix #counter(heading).display("A - ") #it.body]
+  // }
+  
+  counter(heading).update(0)
+  heading(level: 1, [Appendix ])
+  [(don't worry about the random page break, I'm trying to fix it)]
+  body
 }
