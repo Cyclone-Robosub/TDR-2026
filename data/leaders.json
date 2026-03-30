@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Peter Webster",
+    "pronouns": "he/him",
+    "position": "Co-Founder & Co-President",
+    "linkedin": "https://www.linkedin.com/in/peter-webster-81n/",
+    "image": "headshots/peter.jpg"
+  },
+  {
+    "name": "Jason Daniel Pieck",
+    "pronouns": "they/she/he",
+    "position": "Co-Founder & Co-President",
+    "linkedin": "https://www.linkedin.com/in/jdpieck/",
+    "image": "headshots/jason.jpg"
+  },
+  {
+    "name": "Luci Masselink",
+    "pronouns": "they/them",
+    "position": "Hull",
+    "linkedin": "https://www.linkedin.com/in/luci-masselink-366680282/",
+    "image": "headshots/luci.jpg"
+  },
+  {
+    "name": "David Kou",
+    "pronouns": "he/him",
+    "position": "Manipulation",
+    "linkedin": "https://www.linkedin.com/in/david-kou-3290b0193/",
+    "image": "headshots/david.jpg"
+  },
+  {
+    "name": "Alexander Zamora",
+    "pronouns": "he/him",
+    "position": "Controls",
+    "linkedin": "https://www.linkedin.com/in/abrzamora/",
+    "image": "headshots/alex.jpg"
+  },
+  {
+    "name": "William Barber",
+    "pronouns": "he/him",
+    "position": "Systems Architecture",
+    "linkedin": "https://www.linkedin.com/in/william-barber-3a257a315/",
+    "image": "headshots/william.jpg"
+  },
+  {
+    "name": "Devi Amarsaikhan",
+    "pronouns": "she/her",
+    "position": "Vision",
+    "linkedin": "https://www.linkedin.com/in/devi-amarsaikhan/",
+    "image": "headshots/devi.jpg"
+  },
+  {
+    "name": "Aditi Anand",
+    "pronouns": "she/her",
+    "position": "Research",
+    "linkedin": "https://www.linkedin.com/in/anandaditi",
+    "image": "headshots/aditi.jpg"
+  },
+  {
+    "name": "Aubri Lee",
+    "pronouns": "she/her",
+    "position": "Public Relations",
+    "linkedin": "",
+    "image": "headshots/aubri.png"
+  },
+  {
+    "name": "Kekoa Olive",
+    "pronouns": "he/him",
+    "position": "Business",
+    "linkedin": "https://www.linkedin.com/in/kekoa-olive-5a6bb9315/",
+    "image": "headshots/kekoa.jpg"
+  },
+  {
+    "name": "Allen Cooke",
+    "pronouns": "he/him",
+    "position": "Mechanical",
+    "linkedin": "mailto:aecooke@ucdavis.edu",
+    "image": "headshots/allen.jpg"
+  },
+  {
+    "name": "Anjani Gadkari",
+    "pronouns": "she/her",
+    "position": "Electrical",
+    "linkedin": "https://www.linkedin.com/in/anjani-gadkari-2532311ba/",
+    "image": "headshots/anjani.jpg"
+  },
+  {
+    "name": "Nidhi Vadulas",
+    "pronouns": "she/her",
+    "position": "Electrical",
+    "linkedin": "https://www.linkedin.com/in/nidhi-vadulas/",
+    "image": "headshots/nidhi.jpg"
+  },
+  {
+    "name": "Dilraj Gill",
+    "pronouns": "he/him",
+    "position": "Electrical",
+    "linkedin": "https://www.linkedin.com/in/dilraj-gill/",
+    "image": "headshots/dilraj.jpg"
+  },
+  {
+    "name": "Luna Park",
+    "pronouns": "they/she",
+    "position": "Software",
+    "linkedin": "https://www.linkedin.com/in/luna-park-a03b802b5/",
+    "image": "headshots/luna.jpg"
+  },
+  {
+    "name": "Danny Kwong",
+    "pronouns": "he/him",
+    "position": "Software",
+    "linkedin": "https://www.linkedin.com/in/danny-kwong-kcw/",
+    "image": "headshots/danny.jpeg"
+  },
+  {
+    "name": "Michael Tisdale",
+    "pronouns": "he/him",
+    "position": "Software",
+    "linkedin": "https://www.linkedin.com/in/michaelltisdale/",
+    "image": "headshots/michael.jpg"
+  }
+]

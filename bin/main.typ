@@ -3,8 +3,8 @@
 
 #show: ieee.with(
   title: [2026 Technical Design Report],
-  abstract: include "../abstract.typ",
-  authors: csv("../data/tdr-leader-mentor-list.csv", row-type: dictionary),
+  abstract: include "../0-abstract.typ",
+  authors: json("../data/leaders.json"),
   // index-terms: ("Scientific writing", "Typesetting", "Document creation", "Syntax"),
   bibliography: bibliography("../5-refs.bib"),
 )

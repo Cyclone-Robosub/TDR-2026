@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Shima Nazari",
+    "pronouns": "she/her",
+    "position": "Assistant Professor",
+    "linkedin": "https://mae.ucdavis.edu/directory/shima-nazari",
+    "image": "headshots/nazari.jpg"
+  },
+  {
+    "name": "Abhigyan Majumdar",
+    "pronouns": "he/him",
+    "position": "PhD Student",
+    "linkedin": "https://www.linkedin.com/in/abhigyanmajumdar/",
+    "image": "headshots/abhi.jpg"
+  },
+  {
+    "name": "Kory Haydon",
+    "pronouns": "he/him",
+    "position": "PhD Student",
+    "linkedin": "https://www.linkedin.com/in/kjhaydon/",
+    "image": "headshots/kory.jpg"
+  },
+  {
+    "name": "Ziqiang (Joe) Zhu",
+    "pronouns": "he/him",
+    "position": "Masters Student",
+    "linkedin": "https://github.com/AlundorZhu",
+    "image": "headshots/joe.jpeg"
+  }
+]

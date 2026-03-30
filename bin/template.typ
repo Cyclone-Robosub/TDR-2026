@@ -288,7 +288,7 @@
   // }
   
   counter(heading).update(0)
-  heading(level: 1, [Appendix ])
+  heading(level: 1, [Appendix])
   [(don't worry about the random page break, I'm trying to fix it)]
   body
 }

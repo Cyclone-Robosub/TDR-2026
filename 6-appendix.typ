@@ -1,4 +1,4 @@
-#import "oasis-align.typ": * 
+#import "@preview/oasis-align:0.3.3": *  
 
 #set par(
   first-line-indent: (amount: 0in, all: false),
@@ -100,7 +100,7 @@ The low-level controller inputs measurements from the camera system, DVL, and IM
 )
 
 #figure(
-  image("6DoF_PID.png"),
+  image("images/6DoF_PID.png"),
   caption: [The 6-Axis degree of freedom PID Controller. We implemented a Yaw Overshoot correcter to stop the yaw error increasing spontaneously in situations where Manatee needed to turn around 180 degrees.]
 )
 
