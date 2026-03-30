@@ -1,4 +1,4 @@
-#import "@preview/oasis-align:0.3.3": *
+#import "@preview/oasis-align:0.3.3": * 
 
 == Guiding Design Philosophies
 At the core of our organization is a cycle of research, learning, doing, and teaching. This philosophy informs our system's design. Our mechanical and electrical systems are built with modularity, simplicity, and rugged functionality in mind. As a first-year team, time, budget, and experience constraints require us to focus on making a few key systems work well, meaning we combine careful theoretical research with consistent, hands-on testing. High fidelity CAD models made using Onshape @onshape were used to plan the 3D layout and inform assembly procedures. We use 3D printing for rapid iteration, favor off-the-shelf components when possible to avoid unnecessary development costs, and design with practicality and durability in mind.

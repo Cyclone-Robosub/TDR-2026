@@ -274,6 +274,7 @@
 
   // Display the paper's contents.
   body
+  // bibliography
 }
 
 

@@ -1,31 +1,10 @@
 #import "@preview/oasis-align:0.3.3": *  
 
-#set par(
-  first-line-indent: (amount: 0in, all: false),
-  spacing: 1.2em
-)
-#show heading.where(level:3): it => block(text(1em, it.body))
-#show heading.where(level: 2): it => context{
-  if counter(heading).get() != (5,1) {pagebreak()}
-  it
-}
+== Test Plan & Results
+#include "6.1-test-plan-and-results.typ"
 
-#set image(fit: "cover", width: 100%)
-#set grid(column-gutter: .125in)
-// #set heading(numbering: "1.2.3")
-
-// #show ref.where(
-//   form: "normal"
-// ): set ref(supplement: it => {
-//   if it.func() == heading {
-//     "Chapter"
-//   } else {
-//     "Thing"
-//   }
-// })
-
-//== Bill of Materials
-//insert table version of BOM time permitting
+== Bill of Materials
+insert table version of BOM time permitting
 
 == Task Breakdown <taskbreakdown>
 #table(
@@ -214,166 +193,10 @@ One of the key features of our system is the kill switch, which safely cuts powe
 From the Camera Pi, there are two cameras onboard the AUV: forward-facing and downwards-facing. 
 
 
-
-== Vehicle Transportation
-=== Background
-We fabricated a custom bicycle trailer that allows us to transport our robot, tools, Ethernet tether, and other equipment between our main workshop and the pools where we test. 
-
-=== Reasoning
-- Walking and pulling a wagon
-  - One way trip duration: 20 minutes
-  - Pros:
-    - Inexpensive (a decent wagon is about \$80)
-  - Cons:
-    - Slowest
-- Driving
-  - One-way trip duration: 8 minutes
-  - Pros:
-    - Can bring the most equipment
-  - Cons:
-    - The nearest parking lot is 0.4 miles from our workshop
-    - Parking is \$17
-- Bicycling with a trailer
-  - One-way trip duration: 5 minutes
-  - Pros:
-    - Fastest
-    - Davis is one of the most bike-friendly cities in the United States
-    - Almost everyone on the team has a bike
-  - Cons:
-    - More expensive than a wagon (~400 for the entire build)
-
-=== Design Requirements
-Must: 
-- Be able to securely hold the robot (22”x25”x14”)
-- Be able to transport/store all of the required equipment 
-    - Extension cord
-    - Powerstrip
-    - Ethernet tether
-    - Robot batteries and chargers
-    - Two spare parts boxes (14”x7”x4.5”)
-    - Toolbox
-    - Soldering iron
-    - Bike pump
-    - Basic first aid kit
-- Serve as a mobile workstation
-- Be freestanding when not attached to a bike
-- Be able to fit through an ADA compliant door
-- Be able to fit in the trunk of a car
- 
-Nice to have:
-- Lighting
-- Umbrella holder
-
-=== Design Implementation
-#oasis-align(
-  [#figure(
-  box(
-    stroke: 1pt + gray,
-    radius: 2%,
-    image("images/Cart Assembly (4).png")
-  ),
-  caption: [Render of Cart]
-)],
-  [#figure(
-  image("images/BareCart.jpg"),
-  caption: [Bare frame]
-)]
-)
-
-The core of the trailer is a bicycle trailer that we purchased from Amazon. We removed the plastic flooring and side walls of the trailer, including the upwards protrusions that are used to attach the side walls to the frame. 
-
-The majority of the structure that we added to the trailer is laser cut ½” birch plywood. We chose birch plywood because it is relatively affordable, lightweight, easy to laser cut (150W CO2), and sufficiently durable for this application. The plywood panels are aligned with box joints and glued and screwed together. After the plywood parts were assembled, we bolted the structure to the frame of the cart. 
-
-#oasis-align(
-  [
-    #figure(
-      image("images/AssembledPanels.jpg"),
-      caption: [Panel Assembly]
-    )
-  ],
-  [
-    #figure(
-      image("images/Laser.jpg"),
-      caption: [Laser Cutting Panels]
-    )    
-  ]
-)
-
-
-
-We then bolted the toolbox to the trailer and attached the power strip. Because we did not want the cord of the power strip to flop around while the trailer is in motion, we cut off the standard three prong plug and wired the power strip into a surface mount male receptacle. 
-
-#oasis-align(
-  [#figure(
-  image("images/PowerHookup.jpg"),
-  caption: [Power Supply]
-)],
-  [#figure(
-  image("images/Kickstand.jpg"),
-  caption: [Cart Storage]
-)]
-)
-
-To keep the cart stable, we added a folding front kickstand and a bolt-on rear kickstand that also acts as the tailgate of the trailer. To secure the robot to the trailer for transport, we use 6” ¼-20 bolts that go up from the underside of the tabletop and through the chassis of the robot.
-
-=== Completed Cart
-
-// #show image: box.with(stroke: 2pt)
-#oasis-align(
-  // forced-frac: 0.5,
-  // debug:true,
-  [#figure(
-  image("images/David.jpg"),
-  caption: [Completed Cart]
-)],
-  [#figure(
-  image("images/PicnicDay.jpg"),
-  caption: [Cart on Display]
-)]
-)
-
-
-
-== Tether Management
-Our team decided to design our own spooling system to manage our tether. We chose this solution to save costs and add flexibility in how we managed our 50 meters of heavy duty Ethernet cable.
-#oasis-align(
-  [#figure(
-    image("spool-images/spool-iso-front.png"),
-    caption: [Front Trimetric View of Tether Spool]
-  )],
-  [#figure(
-    image("spool-images/spool-iso-back.png"), 
-    caption: [Back Trimetric View of Tether Spool]
-  )]
-)
-#oasis-align(
-  [#figure(
-    image("spool-images/spool-right.png"),
-    caption: [Side View of Tether Spool]
-  )],
-  [#figure(
-    image("spool-images/spool-top.png"), 
-    caption: [Section View of Tether Spool]
-  )]
-)
-
-== Leadership Structure
-
-The Cyclone RoboSub is organized into two groups: Sub-Teams and Divisions. There are six subteams (Navigation, Propulsion, Hull, Manipulation, Research, Public Relations), each led by student leaders who are primarily responsible for project execution. Conversely, there are three divisions (Mechanical, Electrical, Software), each with multiple leaders who are subject matter experts and primarily responsible knowledge-sharing among the team. This structure has enabled the team to support a wide verity of student and projects. 
-
-=== Leadership Selection Process
-- Applications open to all team members whether they are freshmen who just joined or seniors looking for hands on experience before they graduate.
-- Applications are reviewed by current leadership members.
-- Applicants are given 15 minute informal interviews where they are provided an overview of what they can expect as a leadership member and responsibilities are openly discussed.
-- The current leadership team conducts a final round of reviews
-- New leadership is announced and on boarded
-
-
-
 == New Member Training
 Introducing new members to the team and ensuring they have a meaningful experience is one of the fundamental missions of our team. We leverage accessibility in a number of ways including the decision to omit membership dues and open leadership applications to anyone with an interest regardless of experience.
 
-*Battle Boats:*
+=== Battle Boats
 
 2024 saw the introduction of a new team member training activity titled battle boats! This group based, competition-style technical training served as a fun way to provide new members with an onramp into marine robotics. Details of the program are listed below. This past year we saw over 50 students participate in our training program and it set the fast paced, community oriented tone that we would maintain throughout the rest of the year!
 
@@ -427,39 +250,6 @@ Over the past year, Cyclone RoboSub has engaged in a series of community outreac
   )]
 )
 
-== Team Branding
-As with everything on our team, we chose to be extremely deliberate with our branding which was developed during the team’s formation in 2024. The strategies behind our branding elements are listed below:
-
-- Team Name - Cyclone RoboSub was selected as the team name because we felt that the word “Cyclone” would be associated with rotation while staying unique from other RoboSub teams. Within our university the “RoboSub” part of “Cyclone RoboSub” quickly and clearly communicates what the team does: submarine robotics. Instead of being Cyclone AUV who’s acronym is not widely recognized.
-- Team Colors - We chose teal and white as it felt clean and tied in well with our Cyclone theming while also distinguishing ourselves from the traditional blue and gold color scheme employed by the University of California System. Three shades of teal were selected and are prevalent across all of our media and branding
-- Team Logo - The Cyclone RoboSub logo was designed in Inkscape with simplicity at heart. We wanted a logo that was easily recognizable and conveyed the rotational nature of a cyclone. Alongside our colored logo, we also have a version in black and white along with inverted black and white for official documents.
-- Wave Patterning – Across our media you can find a distinct wave pattern using three shades of teal. The regular use of this patterning creates a cohesive brand and is not overly distracting to the viewer.
-- Fonts - We have an official set of font guidelines which are used for all official competition materials. Fonts used are Righteous for titles and Prompt for body text.
-
-All branding resources are maintained on our GitHub for easy access!
-
-https://github.com/Cyclone-Robosub/Cyclone-Logos/
-
-#oasis-align(
-  [#figure(
-    image("images/Cyclone Propeller Logo CTL.png"),
-    caption: [Cyclone Propeller Logo]
-  )],
-  [#figure(
-    image("images/Cyclone Title Card CTL (1).png"), 
-    caption: [Cyclone RoboSub Title Card]
-  )]
-)
-#oasis-align(
-  [#figure(
-    image("images/colors.png"),
-    caption: [Cyclone RoboSub Color Pallet]
-  )],
-  [#figure(
-    image("images/Cyclone Title Card BWL.png"), 
-    caption: [Cyclone RoboSub Title Card (B&W)]
-  )]
-)
 
 == Environmental Research
 Beyond the competition, Cyclone RoboSub is contributing to environmental research efforts through field deployments and interdepartmental collaborations. Equipped with sensors to measure temperature, depth, pH, and dissolved oxygen, the vehicle can collect environmental data and is scheduled to take two transects along the UC Davis Arboretum. The team is also exploring opportunities to contribute to marine science research at the Bodega Marine Lab.
