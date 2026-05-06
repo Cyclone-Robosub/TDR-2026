@@ -1,0 +1,8 @@
+- Systems Architecture
+  - New "Hardware-Process Flowchart"
+     - Potentially work with Controls for block diagram accuracy regarding Matlab code
+  - Update "Software Integration" section
+    - Not using Nortek :(
+    - Detail advantages of our microservices-esque approach
+    - Focus on joystick instead of CL Tool
+    - "HIL" testing?

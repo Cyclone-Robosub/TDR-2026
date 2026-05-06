@@ -1,4 +1,4 @@
-#import "template.typ": *
+ #import "template.typ": *
 
 #show: ieee.with(
   title: [2026 Technical Design Report],

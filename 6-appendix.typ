@@ -180,7 +180,7 @@ Our power distribution system is split into two distinct pathways: high power (1
 
 Power begins at the 16V battery, which connects to both the High Power Distribution Board (HPDB) and a relay-based kill switch (discussed in a later section). The HPDB supplies current directly to the Electronic Speed Controllers (ESCs) and thrusters, while also feeding into a buck converter that steps the voltage down to 5V. From there, power is passed to our Low Power Distribution Board (LPDB) — a custom-designed PCB that distributes power to our processors.
 
-Our control system — what we call the “Brains”—includes the Main Raspberry Pi, a Camera Pi, Raspberry Pi Pico, and an Arduino. Each of these components handles a critical piece of the AUV’s functionality:
+Our control system — what we call the “Brains”—includes the Main Raspberry Pi, a Camera Pi, Raspberry Pi Pico, and an Arduino. Each of these components handles a critical piece of the UV'sfunctionality:
 
 - The Main Pi manages system-level integration and sensor fusion (e.g., IMU data),
 - The Camera Pi handles real-time image processing from both onboard cameras,

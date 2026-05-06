@@ -22,6 +22,7 @@ One of our most meaningful lessons came from an early fault mounting system for 
 
 To correct this, we embedded a threaded aluminum insert into the 3D-printed mount and allowing the bolt to lock cleanly with a sliding mechanism, we created a far more secure and user-friendly solution. Now, the print significantly easier to handle with no loose parts alongside additional rigidity as one component complementing a physical preventative to overtightening the bolt. It was a small change that represented a larger shift toward engineering that is thoughtful, resilient, and practical.
 
+
 === Waterproof Enclosures
 Our robot includes two primary waterproof enclosures: a main cylindrical tube that houses most of the electronics, and a smaller waterproof box mounted beneath the chassis to contain the downward-facing camera.
 
@@ -30,6 +31,14 @@ The main tube is mounted using the hinge-and-clasp system previously described a
 However, through testing and research, we encountered a critical limitation: the IMU required a USB-C connection, and routing that cable through a waterproof penetrator would either require splicing or re-crimping the connector — both of which posed a risk to signal quality and long-term performance. Given the importance of the IMU to our control system and position estimation, we made the decision to relocate it into the main tube, where it could connect directly to the processor without modification or potential signal degradation.
 
 In order to validate successful water-proofing, strict testing procedures were undertaken to check and preserve the airtight seals. Main tube penetrators and O-rings are regularly inspected. The team also follows the guideline of vacuum pressure testing the enclosure before every water test, detailed in @pooltestprocedure.
+
+=== Kill Switch 
+jlkf;sjdklfsdjklsjfkls;fjksld;jfklsd
+
+=== Binocular Camera Enclosures
+
+=== Thruster Guards 
+
 
 == Manipulation
 
