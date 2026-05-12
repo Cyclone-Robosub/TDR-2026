@@ -198,7 +198,7 @@ Introducing new members to the team and ensuring they have a meaningful experien
 
 === Battle Boats
 
-2024 saw the introduction of a new team member training activity titled battle boats! This group based, competition-style technical training served as a fun way to provide new members with an onramp into marine robotics. Details of the program are listed below. This past year we saw over 50 students participate in our training program and it set the fast paced, community oriented tone that we would maintain throughout the rest of the year!
+2024 saw the introduction of a new team member training activity called Battle Boats. This group-based, competition-style technical training served as a fun and educational introduction to marine robotics for new members. Details of the program are listed below. This past year we had 50+ students participate, setting the fast-paced, community-oriented tone that we would maintain throughout the year!
 
 - Premise - Team members would randomly be assigned to groups of 5 and tasked with the design and build of a small remote controlled boat for use in a capture the flag style competition. Trainings would be held to teach members the basic skills needed to build the vehicle and members could decide who would focus on which area: software, electrical, or mechanical.
 - Competition - Each group would be paired with another team and face off against two opposing teams. Each side would be given a structure which held a loop of yarn which would serve as the team’s flag and could be snagged by an opposing battle boat. Teams could win the game by “capturing” the opposing team’s flag or by popping small balloons attached to the backs of each vehicle.
