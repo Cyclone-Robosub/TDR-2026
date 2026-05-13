@@ -9,7 +9,7 @@
 )
 
 = Competition Strategy
-#include "../1-compeition-strategy.typ"
+#include "../1-competition-strategy.typ"
 
 = Design Strategy
 #include "../2-design-strategy.typ"

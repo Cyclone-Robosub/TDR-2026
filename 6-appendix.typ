@@ -7,11 +7,16 @@
 insert table version of BOM time permitting
 
 == Task Breakdown <taskbreakdown>
+
+We measured success rate as a team's ability to achieve the maximum points possible within a given task
+
 #table(
   columns: 3, 
   ..csv("data/task-rankings.csv").flatten()
 )
 
+== Robot Change Log
+#include "6.2-change-log.typ"
 
 == Pool Test Procedure <pooltestprocedure>
 The team has developed a procedure to check the submarine for preparedness, before submerging the robot in the water.
