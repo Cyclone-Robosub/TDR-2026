@@ -1,0 +1,6 @@
+Requirement ID	Requirement Type	Description	Motivation	Keyword	Trace
+SR-S-1	Reliability	Manatee shall make autonomous decisions based off of context	A rigourous control system allows the robot to reliably navigate its surroundings	decision	autonomy
+SR-S-2	Capability	Manatee shall understand its position with respect to the world frame	To provide the control system with context for its decisions	position	autonomy
+SR-S-3	Capability	Manatee shall have physical joystick control	To drive Manatee during research deployments and to expedite pool testing procedures	joystick	research
+SR-S-4	Capability , Reliability	Manatee's software shall be verifiable without uploading to the robot	To allow code blocks to be tested and developed without putting Manatee out of commision.	testable	
+SR-S-5	Capability	Manatee shall have an intuitive interface to communicate with users during wired testing	It is important that users can access core metrics such as battery voltage and camera feeds with minimal training	interface	

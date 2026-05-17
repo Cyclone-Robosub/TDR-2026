@@ -1,0 +1,5 @@
+Requirement ID	Requirement Type	Description	Motivation	Keyword	Trace
+SR-ME-1	Safety	Manatee shall be safe to handle, both in and out of the water	A safe to handle vehicle will protect people handling it, as well as the vehicle itself.	safety	kill-switch, thruster-guard
+SR-ME-2	Research	Manatee's research sensors shall be easy to decouple from the rest of the vehicle	Sensors used in research deployments should be easily mounted and removed between deployments	research-sensor	research
+SR-ME-3	Reliability	All electrical and mechanical features shall be securely fixtured	Temporary fixturing techniques like tape and weak electrical connections frequently disconnect and compromise operation	fixture	submerge
+SR-ME-4	Reliability	Manatee's electrical systems shall be validated for continuous operation	To avoid overheating, excessive power drain, and component damage during sustained operation	electrical-validate	submerge

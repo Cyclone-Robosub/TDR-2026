@@ -1,5 +1,18 @@
 #import "@preview/oasis-align:0.3.3": *  
 
+== Design Requirements
+#import "requirements/styling.typ": *
+
+=== Mission Requirements
+#mission-requirements("mission")
+
+=== Mechanical And Electrical System Requirements
+#system-requirements("mechanical", prefix: "SR-ME-")
+
+=== Software Requirements
+#system-requirements("software", prefix: "SR-S-")
+
+
 == Test Plan & Results
 #include "6.1-test-plan-and-results.typ"
 
@@ -13,11 +26,16 @@ We measured success rate as a team's ability to achieve the maximum points possi
 
 We measured success rate as a team's ability to achieve the maximum points possible within a given task
 
+
+We measured success rate as a team's ability to achieve the maximum points possible within a given task
+
 #table(
   columns: 3, 
   ..csv("data/task-rankings.csv").flatten()
 )
 
+== Robot Change Log
+#include "6.2-change-log.typ"
 == Robot Change Log
 #include "6.2-change-log.typ"
 == Robot Change Log
@@ -190,7 +208,7 @@ Our power distribution system is split into two distinct pathways: high power (1
 
 Power begins at the 16V battery, which connects to both the High Power Distribution Board (HPDB) and a relay-based kill switch (discussed in a later section). The HPDB supplies current directly to the Electronic Speed Controllers (ESCs) and thrusters, while also feeding into a buck converter that steps the voltage down to 5V. From there, power is passed to our Low Power Distribution Board (LPDB) — a custom-designed PCB that distributes power to our processors.
 
-Our control system — what we call the “Brains”—includes the Main Raspberry Pi, a Camera Pi, Raspberry Pi Pico, and an Arduino. Each of these components handles a critical piece of the UV'sfunctionality:
+Our control system — what we call the “Brains”—includes the Main Raspberry Pi, a Camera Pi, Raspberry Pi Pico, and an Arduino. Each of these components handles a critical piece of the UV's functionality:
 
 - The Main Pi manages system-level integration and sensor fusion (e.g., IMU data),
 - The Camera Pi handles real-time image processing from both onboard cameras,
@@ -201,6 +219,12 @@ And the Arduino governs servo control for the Manipulation subsystem and handles
 One of the key features of our system is the kill switch, which safely cuts power to the high-power lines (thrusters) while maintaining power to the Brains. This enables safer debugging and rebooting procedures without a full power-down of the system.
 
 From the Camera Pi, there are two cameras onboard the AUV: forward-facing and downwards-facing. 
+
+...
+This year we have begun redesigning undergoing a redesign of our electrical system. Improving upon the current power system, we are implementing a dedicated battery management system (BMS) *discuss a bit more in appendix*. Additionally, we have designed a new board for thruster control.
+
+Prior to implementing the thruster control board, the Pico was placed on a custom protoboard, which caused poor connection *theres a better reason* between PWM pins on the Pico and the ESCs, motivating the design of this board. The board features: a mount for the Pico, breakouts for the PWM pins, indicator LEDs for verification and debugging, and de-bouncing circuitry for the software kill switch. *needs more detail!*
+*insert schematic and pcb image side-by-side?*
 
 
 == New Member Training
@@ -262,22 +286,20 @@ Over the past year, Cyclone RoboSub has engaged in a series of community outreac
 
 
 == Environmental Research
-Beyond the competition, Cyclone RoboSub is contributing to environmental research efforts through field deployments and interdepartmental collaborations. Equipped with sensors to measure temperature, depth, pH, and dissolved oxygen, the vehicle can collect environmental data and is scheduled to take two transects along the UC Davis Arboretum. The team is also exploring opportunities to contribute to marine science research at the Bodega Marine Lab.
+Beyond the competition, Cyclone RoboSub is contributing to environmental research efforts through field deployments and interdepartmental collaborations. Equipped with sensors to measure temperature, depth, pH, and dissolved oxygen, the vehicle can collect environmental data. Currently, Manatee has completed two deployments at the UC Davis Arboretum, two more planned, a successful deployment in collaboration with the Tahoe Environmental Research Center, and working on research contribution with the Bodega Marine Lab.
 
 Beyond the competition, Cyclone RoboSub is contributing to environmental research efforts through field deployments and interdepartmental collaborations. Our team is unique in that we have had a subteam dedicated to research since day one. The goal of the research team is to coordinate and implement opportunities to get our team involved in marine and environmental research. AUVs are a versatile technology and our hope is to provide students within the environmental and marine sciences the chance to get involved and engaged with high end technology. This past year, our Research Subteam has worked to implement a new suite of sensors and discuss data collection opportunities with local researchers at UC Davis.
 
-=== Sensors for Data Collection:
-- Temperature sensor - collects live temperature readings useful for understanding water properties.
-- Depth Sensor - Used in combination with other data sets during vertical transects
-- Doppler Velocity Logger & IMU – used for geospatial records as a reference for other data sets
-- pH Sensor - Records live water pH data
-- Dissolved Oxygen Logger - Records dissolved oxygen content every minute
-- Cameras - Can record imagery of aquatic life and algal populations
+=== Research Module
 
-=== Planned Research Deployments
-- UC Davis Arboretum Transect – The UC Davis Arboretum is a stretch of natural land within the campus which follows Putah Creek. Sections of the Arboretum were remodeled over the past year to improve wildlife habitats and wetlands. Our vehicle, Manatee, will be deployed to measure the current pH, temperature, and dissolved oxygen content of the Arboretum at two locations through vertical transects. The vehicle will be deployed at the site, manually navigate to the estimated deepest location and slowly descend while taking readings. These readings will be compared with those taken before the renovation to assess impact.
-- UC Davis Tahoe Environmental Research Center - Multiple members of our team have spent time conducting research for the UC Davis Tahoe Environmental Research Center and our plan is to use it as our first serious field testing site. The clarity and low current conditions of Lake Tahoe make it an ideal location to test Manatee’s abilities. Our hope is to collect imagery of algal populations and record pH and temperature data in collaboration with their researchers in the Summer of 2025
-- UC Davis Bodega Marine Laboratory - This year we have actively discussed collaboration efforts between Cyclone RoboSub and the Stachowicz Marine Research Lab. We presented to their researcher on the capabilities of Manatee and they proposed cases in which they would benefit from the use of an underwater vehicle. Use cases included taking temperature samples of soil at low tides, recording imagery of fish species, and collecting light level data at various depths to evaluate seagrass photosynthesis. After further testing of Manatee, we plan to revisit these proposals and select which seem to be feasible. 
+In order to fulfill our goals with data collection, Cyclone RoboSub developed an independent module to attach to Manatee. This independent module utilized an Arduino Uno writing data to an SD card onboard, independently of Manatee. Most notably, our design is modifiable, and can swap between sensors depending on its purpose. So far, we have tested with temperature, pressure, and pH sensors, but it is capable of handling up to six unique sensors. In combination with the Doppler Velocity Logger, IMU, and the onboard RTC module, we combine geospatial records with various data trends from our sensors.
+
+=== Research Deployments
+- UC Davis Arboretum Transect – The UC Davis Arboretum is a stretch of natural land within the campus which follows Putah Creek. Our vehicle, Manatee, was deployed in two separate mock deployments, equipped with our research module. Over the span of two hours, we collected pH, temperature, pressure, and time in the Arboretum, at Lake Spafford within the Arboretum. For 2026, we have two transects planned this year and.
+
+- UC Davis Tahoe Environmental Research Center - Multiple members of our team have spent time conducting research for the UC Davis Tahoe Environmental Research Center. Currently, we plan to utilize the water clarity and low current conditions of Lake Tahoe as our first serious field testing site. In June, our team completed our first offshore deployment, imaging phytoplankton Starting in June, our team is starting to collect imagery of algal populations, as well as water metrics, such as pH and temperature data in collaboration with their researchers.
+
+- UC Davis Bodega Marine Laboratory - This year we have established connections  between Cyclone RoboSub and the Stachowicz Marine Research Lab. We presented to their researcher on the capabilities of Manatee and they proposed cases in which they would benefit from the use of an underwater vehicle. Use cases included taking temperature samples of soil at low tides, recording imagery of fish species, and collecting light level data at various depths to evaluate seagrass photosynthesis. After further testing of Manatee, we will revisit these proposals and adjust our module  the Summer for 2026.
 
 #oasis-align(
   [#figure(

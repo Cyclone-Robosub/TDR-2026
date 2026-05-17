@@ -1,0 +1,6 @@
+Requirement ID	Requirement	Keyword
+CR-1	The vehicle shall be autonomous	autonomy
+CR-2	The vehicle shall be fully submerged during operation	submerge
+CR-3	The vehicle shall have an easily accessible kill switch	kill-switch
+CR-4	All thrusters shall have guards that shield the props	thruster-guard
+MR-5	The vehicle shall be usable in real research deployments with human control	research
